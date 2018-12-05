@@ -41,6 +41,9 @@ func Run(ctx context.Context, listener net.Listener, appService service.Service,
 	c3 := controller.NewVersionController(service)
 	app.MountVersionController(service, c3)
 
+	c1 := controller.NewGuestbookController(service, appService)
+	app.MountGuestbookController(service, c1)
+
 	// Setup graceful server
 	server := &graceful.Server{
 		NoSignalHandling: true,

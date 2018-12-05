@@ -2,9 +2,9 @@ package boltdb
 
 import (
 	"encoding/json"
+	"errors"
 
 	"github.com/boltdb/bolt"
-	"gitlabinternal.litmusloop.com/loop-edge/loopedge-mb/dao/util"
 )
 
 // BoltDBCtx is opaque structure containing BoltDB context
@@ -99,7 +99,7 @@ func (db *BoltDBCtx) Get(bucketName string, key string) ([]byte, error) {
 	}
 
 	if value == nil {
-		return nil, util.ErrDataNotFound
+		return nil, errors.New("Data not found")
 	}
 
 	return value, nil

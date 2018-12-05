@@ -30,7 +30,7 @@ func main() {
 			log15.Root().SetHandler(log15.CallerStackHandler("%+v", log15.StreamHandler(os.Stdout, f)))
 		} else {
 			log15.Root().SetHandler(log15.MultiHandler(
-				log15.LvlFilterHandler(log15.LvlError, log15.CallerFileHandler(log15.StreamHandler(os.Stdout, f))),
+				log15.LvlFilterHandler(log15.LvlInfo, log15.CallerFileHandler(log15.StreamHandler(os.Stdout, f))),
 			))
 		}
 
