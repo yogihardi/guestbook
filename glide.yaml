@@ -1,0 +1,28 @@
+package: .
+import:
+- package: github.com/goadesign/goa
+  version: v1.3.1
+- package: github.com/urfave/cli
+  version: v1.20.0
+- package: github.com/inconshreveable/log15
+  version: v2.13
+- package: github.com/satori/go.uuid
+  version: 36e9d2e
+- package: github.com/tylerb/graceful
+  version: v1.2.15
+- package: cloud.google.com/go
+  version: v0.21.0
+- package: golang.org/x/sys
+  version: 78d5f264b493f125018180c204871ecf58a2dce1
+- package: golang.org/x/crypto
+  version: 8b1d31080a7692e075c4681cb2458454a1fe0706
+- package: golang.org/x/net
+  version: 640f4622ab692b87c2f3a94265e6f579fe38263d
+- package: golang.org/x/oauth2
+  version: cdc340f7c179dbbfa4afd43b7614e8fcadde4269
+- package: golang.org/x/sync
+  version: 1d60e4601c6fd243af51cc01ddf169918a5407ca
+- package: github.com/sirupsen/logrus
+  version: v1.0.5
+- package: github.com/boltdb/bolt
+  version: v1.3.1

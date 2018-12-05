@@ -1,0 +1,11 @@
+/.vscode
+/.history
+/.idea
+/*.iml
+
+/build
+/guestbook
+/.vagrant
+/Vagrantfile
+run_guestbook.sh
+guestbook*
